@@ -152,7 +152,7 @@ export default function Page() {
               Why Choose Event Scrapper?
             </h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              Our platform is designed to help you stay updated with the latest events in your city. Whether you're looking for concerts, workshops, or community gatherings, we've got you covered!
+              Our platform is designed to help you stay updated with the latest events in your city. Whether you are looking for concerts, workshops, or community gatherings, we have got you covered!
               <br />
             </p>
           </div>
@@ -178,5 +178,6 @@ export default function Page() {
     </div>
   );
 }
+
 
 
