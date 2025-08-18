@@ -24,7 +24,7 @@ const Dashboard = () => {
   return (
     <div className="dashboard-container">
       <div className="dashboard-box">
-        <h1>Welcome, {currentUser?.username || "User"}</h1>
+        <h1 className='gradient-text'>Welcome, {currentUser?.username || "User"}</h1>
         <p>Username: {currentUser?.username}</p>
         <p>Email: {currentUser?.email}</p>
         <p>Password: {currentUser?.password}</p>
@@ -58,8 +58,8 @@ const Dashboard = () => {
 
         .dashboard-box h1 {
           margin-bottom: 0.2rem;
-          font-size: 1rem;
-          color: #2563eb;
+          font-size: 1.5rem;
+          font-weight: bold;
         }
 
         .dashboard-box p {
@@ -70,7 +70,7 @@ const Dashboard = () => {
 
         .dashboard-box button {
           padding: 4px 8px;
-          background-color: #2563eb;
+         background: linear-gradient(to right, #34d399, #a855f7);
           color: white;
           border: none;
           border-radius: 4px;
@@ -78,7 +78,13 @@ const Dashboard = () => {
         }
 
         .dashboard-box button:hover {
-          background-color: #121cea;
+         opacity:0.8;
+        }
+
+          .gradient-text {
+         background: linear-gradient(to right, #a855f7);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
         }
       `}</style>
     </div>
@@ -86,3 +92,4 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
+
