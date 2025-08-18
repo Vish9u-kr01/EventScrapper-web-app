@@ -97,7 +97,7 @@ const SignupForm = () => {
           padding: 20px;
           border: 1px solid #ccc;
           border-radius: 8px;
-          color: #2563eb;
+            color: #fff;
           background-color:black;
           box-sizing: border-box;
         }
@@ -182,5 +182,6 @@ const SignupForm = () => {
 };
 
 export default SignupForm;
+
 
 
