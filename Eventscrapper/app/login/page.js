@@ -28,11 +28,11 @@ const SignupForm = () => {
 
   return (
     <div className="signup-form">
-      <h2>Login !</h2>
+      <h2 className="gradient-text">Login !</h2>
       <form onSubmit={handleSubmit(onSubmit)}>
         {/* Email Field */}
         <div>
-          <label htmlFor="email">Email:</label>
+          <label className="gradient-text" htmlFor="email">Email:</label>
           <input
             id="email"
             type="email"
@@ -52,7 +52,7 @@ const SignupForm = () => {
 
         {/* Password Field */}
         <div>
-          <label htmlFor="password">Password:</label>
+          <label className="gradient-text" htmlFor="password">Password:</label>
           <input
             id="password"
             type="password"
@@ -72,12 +72,12 @@ const SignupForm = () => {
 
         {/* Submit Button */}
         <div>
-          <button type="submit">Login</button>
+          <button className="gradient-button" type="submit">Login</button>
         </div>
 
         {/* Link to Signup */}
         <div>
-          <p style={{ marginTop: '20px', marginLeft: '20px', color: 'black' }}>
+          <p style={{ marginTop: '20px', marginLeft: '20px', color: 'white' }}>
             Don&apos;t have an account?{' '}
             <Link href="/signup" style={{ color: '#2563eb', textDecoration: 'none' }}>
               Sign Up
@@ -98,7 +98,7 @@ const SignupForm = () => {
           border: 1px solid #ccc;
           border-radius: 8px;
           color: #2563eb;
-          background-color: #fff;
+          background-color: black;
           box-sizing: border-box;
         }
 
@@ -114,6 +114,8 @@ const SignupForm = () => {
 
         .signup-form h2 {
           text-align: center;
+          font-size: 1.5rem;
+          font-weight: bold;
         }
 
         .signup-form div {
@@ -152,11 +154,33 @@ const SignupForm = () => {
         .signup-form button:hover {
           background-color: #121cea;
         }
+
+        .gradient-text {
+         background: linear-gradient(to right, #34d399, #a855f7);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        .gradient-button {
+          width: 100%;
+          padding: 10px;
+           background: linear-gradient(to right, #34d399, #a855f7);
+          color: white;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          font-weight: bold;
+        }
+
+          .gradient-button:hover {
+          opacity: 0.8;
+        }
       `}</style>
     </div>
   );
 };
 
 export default SignupForm;
+
 
 
