@@ -95,9 +95,13 @@ export default function Page() {
             >
               Get Started
             </Link>
+               <Link 
+              prefetch={false}
+              href="/learnmore">
             <button className="px-8 py-3 bg-transparent border-2 border-emerald-500 text-white rounded-lg hover:bg-emerald-900/30 transition duration-300">
               Learn More
             </button>
+            </Link>
           </div>
 
           {/* AI-style input field with shining particles */}
@@ -178,6 +182,7 @@ export default function Page() {
     </div>
   );
 }
+
 
 
 
